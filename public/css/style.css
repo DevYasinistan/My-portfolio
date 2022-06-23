@@ -27,10 +27,75 @@ h1{
 width : 100%;
 text-align: center;
 margin : 20px;
-font-family: "Hey comic" ;
+font-family: Montserrat, Helvetica, sans-serif;
 text-decoration: solid black;
+padding : 10px ;
 }
 
+.text-presentation
+{
+display :flex ; 
+text-align: center;
+width : 50% ;
+font-family: Helvetica,
+  sans-serif ;
+  margin-top : 20px;
+  margin-left : auto;
+  margin-right: auto ;
+}
+
+.container {
+  width : 50% ;
+  display :flex ;
+  justify-content : center ;
+  
+}
+  .img {
+
+      opacity: 1;
+      display: block;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+ .middle {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ .container:hover .image {
+   opacity: 0.3;
+ }
+
+ .container:hover .middle {
+   opacity: 1;
+ }
+
+ .text {
+  font-weight: bold;
+  font-family : Helvetica,
+    sans-serif;
+  border : solid black 1px;
+   background-color: #6a89cc;
+   color: #414141;
+   text-decoration: none; 
+   font-size: 16px;
+   padding: 16px 32px;
+ }
+
+a .contact-photo:link
+{
+  color: black;
+}
+/*navbar */
 
 nav {
   position: sticky;
