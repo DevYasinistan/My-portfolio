@@ -13,7 +13,11 @@
             <span></span>
         </button>
         <div class="navlinks-container">
-            <a href="{{path('app_cv')}}" aria-current="page">Mon CV</a>
+        {% if app.request.get('_route') == 'app_cv'  %}
+         <a href="documents/CVIstanbulluYasin.pdf"  download="CVIstanbulluYasin.pdf" aria-current="page">Télécharger Mon CV</a>
+          {% else %}  
+           <a href="{{path('app_cv')}}" aria-current="page">Mon CV</a>
+            {% endif %}
             <a href="#">Mes projets</a>
             <a href="#">Mes compétences</a>
             <a class="contact" href="#">Contactez-moi</a>
