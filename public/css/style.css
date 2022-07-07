@@ -23,6 +23,129 @@ body {
   background: #f4f4f4;
 }
 
+
+
+/*page competences */
+
+
+
+/*carousel */
+
+.carousel-content {
+  width: 100%;
+}
+
+.carousel-home {
+  margin: 15px;
+  width: 98%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.img-carousel {
+  object-fit: contain;
+  width: 400px;
+  height: 400px;
+}
+
+
+/* carousel */ 
+
+.backend {
+display : flex ;
+align-items: center;
+margin-top: 30px;
+margin-left:15%;
+margin-right: 20%;
+padding-bottom : 50px;
+
+
+}
+
+.text-backend
+{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      padding : 30px ; 
+}
+.text-backend span
+{
+font-weight: bold;
+margin : 20px ; 
+} 
+
+
+.frontend {
+    flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 20%;
+padding-bottom: 50px;
+}
+
+.text-frontend {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 20px;
+}
+
+.text-frontend span {
+  font-weight: bold;
+  margin: 20px;
+}
+
+
+.cms {
+  
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 20%;
+padding-bottom: 50px;
+}
+
+.text-cms {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 20px;
+}
+
+.text-cms span {
+  font-weight: bold;
+  margin: 20px;
+}
+.container-titre {
+margin-bottom : 40px ;
+border-bottom: solid black 2px;
+margin-left : 50px ; 
+margin-right:50px;
+padding-bottom : 30px;
+} 
+
+.titre-competences
+{
+margin-top : 30px ;
+display : flex ; 
+justify-content: center;
+
+}
+
+
+
+
+
 /*Page mon cv */ 
 
 .accordion
@@ -147,6 +270,7 @@ a .contact-photo:link
 /*navbar */
 
 nav {
+  z-index: 1000;
   position: sticky;
   top: 0px;
   width: 100%;
